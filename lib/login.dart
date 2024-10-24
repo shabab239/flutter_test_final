@@ -6,7 +6,6 @@ class Login extends StatelessWidget {
   final TextEditingController emailTEC = TextEditingController();
   final TextEditingController passwordTEC = TextEditingController();
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,10 +42,24 @@ class Login extends StatelessWidget {
                   backgroundColor: Colors.blue,
                 ),
                 onPressed: () => {
-                  //Navigator.pushNamed(context, "/home")
-                },
+                      //Navigator.pushNamed(context, "/home")
+                    },
                 child: const Text(
                   "Login",
+                  style: TextStyle(color: Colors.white),
+                )),
+            const SizedBox(
+              height: 10,
+            ),
+            ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue,
+                ),
+                onPressed: () => {
+                      Navigator.pushNamed(context, "/registration")
+                    },
+                child: const Text(
+                  "Registration",
                   style: TextStyle(color: Colors.white),
                 ))
           ],

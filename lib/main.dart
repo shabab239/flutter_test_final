@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test_final/login.dart';
+import 'package:flutter_test_final/registration.dart';
 
 import 'home.dart';
 
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       routes: {
         '/login': (context) => Login(),
+        '/registration': (context) => Registration(),
         '/home': (context) => Home(),
       },
       home: Login()
